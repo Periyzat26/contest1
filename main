@@ -18,7 +18,7 @@ def test_kwargsAcceptFun():
     print("Test the kwargsAcceptFun:") 
     kwargsAcceptFun(name="Periyzat", age=19, country="Karakalpakstan", hobby="Chess") 
  
-if name == "main": 
+if __name__ == "__main__": 
     func() 
     funx() 
     func() 
