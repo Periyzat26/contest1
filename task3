@@ -15,12 +15,12 @@ def decorator_1(func):
 def func():
     print("I am ready to Start")
     result = 0
-    n = random.randint(10, 751)
+    n = random.randint(13, 753)
     for i in range(n):
         result += (i ** 2)
 
 @decorator_1
-def funx(n=2, m=5):
+def funx(n=3, m=4):
     print("I am ready to do serious stuff")
     max_val = float('-inf')
     n = random.randint(10, 751)
@@ -29,4 +29,3 @@ def funx(n=2, m=5):
         if i > max_val:
             max_val = i
 
-    func()
