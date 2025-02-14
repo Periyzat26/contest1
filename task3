@@ -23,7 +23,7 @@ def func():
 def funx(n=3, m=4):
     print("I am ready to do serious stuff")
     max_val = float('-inf')
-    n = random.randint(10, 751)
+    n = random.randint(13, 753)
     res = [pow(i, 2) for i in range(n)]
     for i in res:
         if i > max_val:
