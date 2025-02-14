@@ -1,19 +1,20 @@
 def typeBasedTransformer(**kwargs):
-    modified_data = {}
+    transformed = {}
+
     for k, v in kwargs.items():
         if isinstance(v, (int, float)):
-            modified_data[k] = v ** 2
+            transformed[k] = v ** 2
         elif isinstance(v, str):
-            modified_data[k] = v[::-1]
+            transformed[k] = v[::-1]
         elif isinstance(v, bool):
-            modified_data[k] = not v
+            transformed[k] = not v
         elif isinstance(v, (list, tuple)):
-            modified_data[k] = v[::-1]
+            transformed[k] = v[::-1]
         elif isinstance(v, dict):
-            if len(set(v.values())) == len(v.values()):
-                modified_data[k] = {val: key for key, val in v.items()}
+            if len(set(v.values())) == len(v()):
+                transformed[k] = {val: key for key, val in v.items()}
             else:
-                modified_data[k] = v
+                transformed[k] = v
         else:
-            modified_data[k] = v
-    return modified_data
+            transformed[k] = v
+    return transformed
