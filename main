@@ -5,18 +5,18 @@ from task3 import decorator_1, func, funx
  
 @decorator_1 
 def test_typeBasedTransformer(): 
-    print("Testing typeBasedTransformer:") 
+    print("Test the typeBasedTransformer:") 
     result = typeBasedTransformer( 
-        num=4, text="Hello", flag=True, 
-        data=[1, 2, 3], mapping={"a": 1, "b": 2}, 
+        num=7, text="Guten Tag", flag=True, 
+        data=[1, 2, 3], mapping={"a": 2, "b": 3}, 
         unsupported={1, 2, 3} 
     ) 
     print(result) 
  
 @decorator_1 
 def test_kwargsAcceptFun(): 
-    print("Testing kwargsAcceptFun:") 
-    kwargsAcceptFun(name="Komron", age=22, country="Karakalpakstan", hobby="Music") 
+    print("Test the kwargsAcceptFun:") 
+    kwargsAcceptFun(name="Periyzat", age=19, country="Karakalpakstan", hobby="Chess") 
  
 if name == "main": 
     func() 
